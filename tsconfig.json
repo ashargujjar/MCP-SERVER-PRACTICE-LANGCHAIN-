@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022" /* Or ES2020+ */,
+    "module": "NodeNext" /* Required for modern ESM imports */,
+    "moduleResolution": "NodeNext" /* Teaches TS to read modern package.json exports */,
+    "esModuleInterop": true,
+    "skipLibCheck": true /* Prevents type errors from deep inside dependencies */,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
