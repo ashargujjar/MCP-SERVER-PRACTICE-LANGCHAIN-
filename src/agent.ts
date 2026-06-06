@@ -43,6 +43,7 @@ const employeesByDepartmentTool = new DynamicStructuredTool({
     });
   },
 });
+//  LLM
 const llm = new ChatOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   temperature: 0,
@@ -61,6 +62,7 @@ const result = await agent.invoke({
     },
   ],
 });
+// LOGGING OUT
 
 console.log("Full Result messages", result.messages);
 console.log("Result....", result.messages.at(-1)?.content);
